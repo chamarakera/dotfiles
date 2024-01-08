@@ -23,12 +23,21 @@ alias pip="pip3"
 alias p="python"
 
 # git
-# alias ga='git add -A'
-# alias gc='git commit -m $2'
-# alias gp='git push'
+alias ga='git add -A'
+alias gp='git push'
+alias gpst='git push --set-upstream origin $1'
 gacp() {
     git add . && git commit -m "$*" && git push
 }
 
-# alias gco='git checkout $1'
-# alias gpst='git push --set-upstream origin $1'
+gc(){
+    git commit -m "$*"
+}
+
+gco(){
+    git checkout "$*"
+}
+
+gcob(){
+    git checkout -b "$*"
+}
