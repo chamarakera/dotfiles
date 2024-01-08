@@ -1,4 +1,6 @@
-export PATH=/opt/homebrew/bin:$PATH
+export PATH=$PATH:/opt/homebrew/bin
+eval $(brew shellenv)
+
 export PATH=$HOME/.asdf/shims:$PATH
 
 # ohmyposh
@@ -26,6 +28,8 @@ alias p="python"
 alias ga='git add -A'
 alias gp='git push'
 alias gpst='git push --set-upstream origin $1'
+alias gl='git log'
+
 gacp() {
     git add . && git commit -m "$*" && git push
 }
@@ -41,3 +45,6 @@ gco(){
 gcob(){
     git checkout -b "$*"
 }
+
+# other
+alias l='ls -alh'
