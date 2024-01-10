@@ -49,6 +49,10 @@ gcob(){
     git checkout -b "$*"
 }
 
+ghpr()(
+    gh pr create --title "$*"
+)
+
 # other
 alias l='ls -lah --color'
 alias ..="cd .."
