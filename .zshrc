@@ -13,6 +13,9 @@ alias kx="kubectx"
 alias kn="kubens"
 alias kg="kubectl get"
 alias kxu="kubectl config unset current-contextg"
+alias kexec="kubectl exec --stdin --tty $1 -- /bin/bash"
+alias debug="kubectl run -i --tty --rm debug --image=ubuntu:latest --restart=Never -- /bin/bash"
+alias debugalpine="kubectl run -i --tty --rm debug --image=alpine:3.7 --restart=Never -- /bin/sh"
 
 # terraform
 alias tf="terraform"
@@ -47,4 +50,11 @@ gcob(){
 }
 
 # other
-alias l='ls -alh'
+alias l='ls -lah --color'
+alias ..="cd .."
+alias senv="source ~/.zshrc && cd ."
+
+# tar
+alias tardir='tar -czvf "$1"'
+alias untarzippeddir='tar -xzvf "$1" "$2"'
+alias untardir='tar -xvf "$1"'

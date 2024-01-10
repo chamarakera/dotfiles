@@ -36,6 +36,8 @@ brew install \
   eks-node-viewer \
   derailed/k9s/k9s
 
+brew install --cask openlens
+
 asdf plugin add python || true
 asdf plugin add terraform || true
 asdf plugin add poetry || true
