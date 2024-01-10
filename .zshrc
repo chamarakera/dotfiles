@@ -27,6 +27,10 @@ alias tfm='terraform fmt -recursive'
 alias pip="pip3"
 alias p="python"
 
+# poetry
+alias prun='poetry run python $1'
+alias padd='poetry add $1'
+
 # git
 alias ga='git add -A'
 alias gp='git push'
