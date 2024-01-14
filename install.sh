@@ -33,10 +33,14 @@ brew install \
   hugo \
   kubent \
   gh \
+  minikube \
   eks-node-viewer \
+  docker \
+  colima \
   derailed/k9s/k9s
 
 brew install --cask openlens
+
 
 asdf plugin add python || true
 asdf plugin add terraform || true
