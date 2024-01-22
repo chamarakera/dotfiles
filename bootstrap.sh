@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-set -e
+set -eux
 
 if [[ $(xcode-select --version) ]]; then
   echo Xcode command tools already installed
@@ -37,6 +37,7 @@ brew install \
   eks-node-viewer \
   docker \
   colima \
+  kustomize \
   derailed/k9s/k9s
 
 brew install --cask openlens

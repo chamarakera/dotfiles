@@ -14,6 +14,7 @@ alias kn="kubens"
 alias kg="kubectl get"
 alias kxu="kubectl config unset current-contextg"
 alias kexec="kubectl exec --stdin --tty $1 -- /bin/bash"
+alias kurl="kubectl run curl --rm -it --image=appropriate/curl --restart=Never --command /bin/sh"
 alias debug="kubectl run -i --tty --rm debug --image=ubuntu:latest --restart=Never -- /bin/bash"
 alias debugalpine="kubectl run -i --tty --rm debug --image=alpine:3.7 --restart=Never -- /bin/sh"
 
