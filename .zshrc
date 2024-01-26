@@ -62,6 +62,8 @@ ghpr()(
 alias l='ls -lah --color'
 alias ..="cd .."
 alias senv="source ~/.zshrc && cd ."
+alias c="clear"
+alias e="exit"
 
 # tar
 alias tardir='tar -czvf "$1"'
