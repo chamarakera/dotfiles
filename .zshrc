@@ -3,10 +3,6 @@ eval $(brew shellenv)
 
 export PATH=$HOME/.asdf/shims:$PATH
 
-# ohmyposh
-export DEFAULT_USER=$USER
-eval "$(oh-my-posh init zsh --config /opt/homebrew/opt/oh-my-posh/themes/jandedobbeleer.omp.json)"
-
 # kubernetes
 alias k="kubectl"
 alias kx="kubectx"
@@ -69,3 +65,7 @@ alias e="exit"
 alias tardir='tar -czvf "$1"'
 alias untarzippeddir='tar -xzvf "$1" "$2"'
 alias untardir='tar -xvf "$1"'
+
+# zsh plugins
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

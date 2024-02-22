@@ -39,7 +39,10 @@ brew install \
   colima \
   yarn \
   kustomize \
-  derailed/k9s/k9s
+  derailed/k9s/k9s \
+  zsh-autosuggestions \
+  zsh-syntax-highlighting \
+  powerlevel10k
 
 brew install --cask openlens
 
@@ -62,5 +65,7 @@ asdf global nodejs 20.11.1
 
 asdf install terraform latest
 asdf global terraform latest
+
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 exec -l $SHELL
