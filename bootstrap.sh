@@ -46,6 +46,7 @@ brew install --cask openlens
 asdf plugin add python || true
 asdf plugin add terraform || true
 asdf plugin add poetry || true
+asdf plugin add nodejs || true
 
 asdf install python 3.11.7
 asdf global python 3.11.7
@@ -54,6 +55,9 @@ asdf install python 3.7.17
 
 asdf install poetry 1.7.1
 asdf global poetry 1.7.1
+
+asdf install nodejs 20.11.1
+asdf global nodejs 20.11.1
 
 asdf install terraform latest
 asdf global terraform latest
