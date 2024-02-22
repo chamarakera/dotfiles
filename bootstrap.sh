@@ -37,6 +37,7 @@ brew install \
   eks-node-viewer \
   docker \
   colima \
+  yarn \
   kustomize \
   derailed/k9s/k9s
 
