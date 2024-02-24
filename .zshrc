@@ -160,25 +160,25 @@ alias gpst='git push --set-upstream origin $1'
 alias gl='git log'
 
 # function based aliases
-# function gacp {
-#     git add . && git commit -m "$*" && git push
-# }
+function gacp {
+    git add . && git commit -m "$*" && git push
+}
 
-# function gc {
-#     git commit -m "$*"
-# }
+function gc {
+    git commit -m "$*"
+}
 
-# function gco {
-#     git checkout "$*"
-# }
+function gco {
+    git checkout "$*"
+}
 
-# function gcob {
-#     git checkout -b "$*"
-# }
+function gcob {
+    git checkout -b "$*"
+}
 
-# function ghpr {
-#     gh pr create --title "$*"
-# }
+function ghpr {
+    gh pr create --title "$*"
+}
 
 # other
 alias l='ls -lah --color'
