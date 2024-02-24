@@ -42,6 +42,8 @@ brew install \
   derailed/k9s/k9s \
   zsh-autosuggestions \
   zsh-syntax-highlighting \
+  kubectx \
+  kubens \
   powerlevel10k
 
 brew install --cask openlens

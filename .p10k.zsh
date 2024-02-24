@@ -1,0 +1,1 @@
+/Users/chamarakeragala/.p10k.zsh
