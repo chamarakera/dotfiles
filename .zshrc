@@ -144,6 +144,7 @@ alias tfi='terraform init'
 alias tfm='terraform fmt -recursive'
 alias tfa='terraform apply'
 alias tfu='terraform force-unlock -force'
+alias tfpt="terraform show -no-color -json plan | jq -r '.resource_changes[] | select(.change.actions[0]=="update" or .change.actions[0]=="create" or .change.actions[0]=="create") | .address'"
 
 # python
 alias pip="pip3"

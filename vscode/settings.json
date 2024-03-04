@@ -1,4 +1,5 @@
 {
     "terminal.integrated.fontFamily": "MesloLGS NF",
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "editor.renderWhitespace": "all"
 }

@@ -53,6 +53,7 @@ asdf plugin add python || true
 asdf plugin add terraform || true
 asdf plugin add poetry || true
 asdf plugin add nodejs || true
+asdf plugin add vault || true
 
 asdf install python 3.11.7
 asdf global python 3.11.7
@@ -67,6 +68,9 @@ asdf global nodejs 20.11.1
 
 asdf install terraform latest
 asdf global terraform latest
+
+asdf install vault 1.13.1
+asdf global vault 1.13.1
 
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
